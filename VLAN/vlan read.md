@@ -1,4 +1,4 @@
-## VLAN Configuration using Cisco Packet Tracer 🌐
+# VLAN Configuration using Cisco Packet Tracer 🌐
 ### 📌 Project Overview
 This project demonstrates the configuration of Virtual Local Area Network (VLANs)using Cisco Packet Tracer. Multiple VLANs are created to logically segment the network into different departments and control communication between devices.
 ### 🧰 Tools Used
@@ -61,12 +61,15 @@ switchport mode trunk
 | VLAN 20 | 192.168.10.x |
 | VLAN 30 | 192.168.30.x |
 ### 🧪 Testing
+- device in same VLAN → ✅ can communicate
+- device in different VLAN → ❌ cannot communicate (without routing)
+### 🎯 Learning Outcoms
 - VLAN creation and management
 - Network segmentation
 - Trunking between switches  
 - Improved network security and performance
 ### 📁 Files Included
-- valn.pkt ➡ Packet tracer file
+- valn.pkt → Packet tracer file
 - screenshots of VLAN topology
 ### 👨‍💻 Author
  Aamin pinjari
