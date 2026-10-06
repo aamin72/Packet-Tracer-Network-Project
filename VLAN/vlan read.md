@@ -16,41 +16,41 @@ This project demonstrates the configuration of Virtual Local Area Network (VLANs
 | VLAN 30 | Finance |
 ### ⚙ Configuration Details
 ##### 🔸 VLAN Creation
- <span style="color:red">enable
+enable  
 config terminal
 
 vlan 10  
-name sales  
-<span style="color:red">exit  
+name sales    
+exit  
 
 vlan 20  
-name marketing   
-<span style="color:red">exit 
+name marketing     
+exit 
 
 vlan 30  
 name finance   
-<span style="color:red">exit 
+exit 
 ### 🔹 Assign Ports to VLANs
 
 interface rang fastethernet 0/1 -2  
 switchport switch mode access  
-switchport acces vlan 10  
-<span style="color:red">exit
+switchport access VLAN 10    
+exit
 
 interface range fastehernet 0/3 -4  
 switchport mode access   
-switchprot access vlan 20  
-<span style="color:red">exit
+switchport access VLAN 20      
+exit
 
 interface rang fastethernet 0/5 -6  
 switchport mode access  
-switchport access vlan 30  
-<span style="color:red">exit  
+switchport access VLAN 30    
+exit  
 ### 🔹 Trunk Configuration (between switches)
 
 interface fastethernet 0/23  
-switchport mode trunk  
-<span style="color:red">exit  
+switchport mode trunk     
+exit  
 
 ##### 👉 Allow multiple VLAN traffic bewteen switches
 ### 💻 PC Configuration 
